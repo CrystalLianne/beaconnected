@@ -5,13 +5,13 @@
 
 <body>
 {{> header}}
+{{> about_us}}
+{{> separator}}
+{{> how_it_works}}
+{{> separator2}}
+{{> contact_us}}
 {{> footer}}
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
 
 <template name="header">
 	<div class="header_div">
@@ -38,7 +38,9 @@
 		</div>	
 		</div>
 	
-	</div>		
+	</div>	
+</template>
+<template name="about_us">	
 		<div id="about_us">
 		<h2>About Us</h2>
 		<div class="left-div">
@@ -49,8 +51,12 @@
 <p>Creating a business profile allows you to find people which are waiting to be discovered;</p><p>to share and collaborate.  Beaconnected shares the same principals as Rise and encourages</p><p>openness and sharing.</p> 
 </div><img class="right-img" src="/images/square-image.png" alt="right-image"/>
 </div>
+</template>
+<template name="separator">
 <div class="separator-1">
 </div>
+</template>
+<template name="how_it_works">
 <div id="how_it_works">
 <h2>How It Works</h2>
 <figure>
@@ -89,6 +95,8 @@
 </figure>
 <hr>
 </div>
+</template>
+<template name="separator2">
 <div class="separator-2" id="locations">
 	<div class="mini-wrapper">
 		<div class="mini">
@@ -126,6 +134,8 @@
 		</div>
 	</div>
 	</div>
+	</template>
+	<template name="contact_us">
 	<div id="contact_us">
 	<h2>Contact</h2>
 		<p>If you're interested in knowing more, submit our form below.</p>
@@ -145,8 +155,9 @@
 		</form>
 		</div>
 	</div>
+	</template>
 
-</template>
+
 <template name="footer">
 <footer>
 	<img src="/images/footer_logo.png" alt="footer logo" />
