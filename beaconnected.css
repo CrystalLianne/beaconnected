@@ -13,7 +13,7 @@ body {
 
 .header_div {
 	width: 100%;
-	height: 300px;
+	height: 340px;
 	background-color: #000;
 	background-image: url('/images/banner.png');
 	background-size: 100%;
@@ -71,6 +71,7 @@ nav ul li.button_container a{
 }
 
 .orange-button {
+cursor:pointer;
 text-align: center;
 	background-color: #F27835;
 	border: 2px solid #F27835;
@@ -92,6 +93,7 @@ a:hover {
 
 .orange-button:hover {
 background-color: #be4d0d;
+border: 2px solid #be4d0d;
 color: #000;
 }
 
@@ -101,10 +103,48 @@ text-align: center;
 	background-color: transparent;
 	border: 2px solid #fff;
 	color: #fff;
+	cursor: pointer;
 }
 
 .white-button:hover {
 	background: #fff;
 	color: #000;
 	font-weight: bold;
+}
+
+.left-content {
+	float: left;
+	clear: left;
+	width: 50%;
+	margin: 20px 0px 30px 0px;
+	color: #fff;
+}
+
+.orange-button.large-button {
+margin-top: 10px;
+padding: 5px;
+position: relative;
+display: inline-block;
+width:50%;
+}
+
+p {
+margin: 0px;
+}
+
+p:last-child {
+	margin-bottom: 20px;
+}
+
+.arrow {
+	display: inline-block;
+	width: 50px;
+	float: right;
+	height: 100px;
+	vertical-align: text-bottom;
+}
+
+.arrow img {
+	width: 30px;
+	margin-top: 55px;
 }
