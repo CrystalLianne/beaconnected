@@ -148,3 +148,27 @@ p:last-child {
 	width: 30px;
 	margin-top: 55px;
 }
+
+#about_us {
+	margin: 0 auto;
+	width:50%;
+}
+
+.right-img {
+float:right;
+width:200px;
+}
+
+.left-div {
+width:70%;
+float:left;
+}
+
+.left-div p {
+	font-size: 11px;
+}
+
+#about_us h2 {
+color: #888;
+font-size: 24px;
+}
