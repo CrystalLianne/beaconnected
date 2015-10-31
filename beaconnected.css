@@ -168,9 +168,10 @@ float:left;
 	font-size: 11px;
 }
 
-#about_us h2 {
+#about_us h2,#how_it_works h2 {
 color: #888;
 font-size: 24px;
+padding-top: 20px;
 }
 
 .separator-1 {
@@ -182,4 +183,38 @@ width: 100%;
 height: 180px;
 background-image: url('/images/Location-image.png');
 background-position: center;
+}
+
+#how_it_works {
+	display: block;
+	position: relative;
+	float: none;
+	clear: both;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+figure {
+width: 27%;
+margin: 20px 20px;
+display: inline-block;
+z-index: 4;
+text-align:center;
+float:left;
+}
+
+figure img {
+z-index: 6;
+}
+
+#how_it_works hr {
+	border: 2px solid #F27835;
+	position: absolute;
+	display: block;
+	width: 70%;
+	z-index: -1;
+	top: 160px;
+	margin: 20px auto;
+	margin-left: 30px;
 }
