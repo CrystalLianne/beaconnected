@@ -262,10 +262,11 @@ address p {
 	display: block;
 	margin: 0 auto;
 	float: none;
-	margin-top: 20px;
+	margin-top: 0px;
 	float: left;
 	width:100%;
 	background-color:#eee;
+	padding-bottom: 40px;
 }
 
 #contact_us .form_container {
@@ -315,4 +316,19 @@ address p {
 	border-radius: 10px;
 	margin-top: 20px;
 	font-size: 11px;
+	padding:5px;
+}
+
+footer {
+	height: 60px;
+	background-color: #999;
+	width: 100%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+footer img {
+	margin: 0 auto;
+	margin-top: 20px;
 }
