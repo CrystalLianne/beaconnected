@@ -2,18 +2,56 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
+  //Template.hello.helpers({
+   // counter: function () {
+   //   return Session.get('counter');
+   // }
+  //});
+  
+// Router.route('/', function () {
+  //this.render('header', 'about_us');
+//});
+
+
+Router.map(function () {
+  this.route('home', {
+  path: '/',
+  template: 'myHomeTemplate',
+  layoutTemplate: 'layout',
+  yieldTemplates: {
+    'myAsideTemplate': {to: 'header'},
+    'myFooter': {to: 'about_us'}
     }
+  });
+});
+
+Router.route('/items', function () {
+  this.render('about_us');
+});
+
+Router.route('/items/:_id', function () {
+  var item = Items.findOne({_id: this.params._id});
+  this.render('about_us', {data: item});
+});
+
+Router.route('/files/:filename', function () {
+  this.response.end('hi from the server\n');
+}, {where: 'server'});
+
+Router.route('/restful', {where: 'server'})
+  .get(function () {
+    this.response.end('get request\n');
+  })
+  .post(function () {
+    this.response.end('post request\n');
   });
 
-  Template.hello.events({
-    'click button': function () {
+  //Template.hello.events({
+    //'click button': function () {
       // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
+      //Session.set('counter', Session.get('counter') + 1);
+    //}
+  //});
 }
 
 if (Meteor.isServer) {
