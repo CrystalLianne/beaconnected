@@ -29,12 +29,28 @@ Router.map(function () {
   });
 });
 Router.map(function () {
-  this.route('listings', {
-  path: '/listings',
-  template: 'myHomeTemplate',
-  layoutTemplate: 'listings'
+  this.route('/', {
+  path: '/listings/individual',
+  template: 'individual',
+  layoutTemplate: 'individual_listings_page'
   });
 });
+
+Router.map(function () {
+  this.route('/', {
+  path: '/listings/business',
+  template: 'business',
+  layoutTemplate: 'business_listings_page'
+  });
+});
+Router.map(function () {
+  this.route('/', {
+  path: '/listings/service',
+  template: 'services',
+  layoutTemplate: 'services_listings_page'
+  });
+});
+
 
 Router.route('/items', function () {
   this.render('about_us');

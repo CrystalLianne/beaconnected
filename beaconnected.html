@@ -34,10 +34,34 @@
 </nav>
 </template>
 
-
-<template name="search_header">
+<template name="individual_listings_page">
+<div class="header_search_div header_div">
+		<div class="inner_header">
+{{> search_header}}
+{{> search_form_individuals}}
+</div></div>
+</template>
+<template name="business_listings_page">
+<div class="header_search_div header_div">
+		<div class="inner_header">
+{{> search_header}}
+{{> search_form_businesses}}
+		</div>
+	
+	</div>	
+</template>
+<template name="services_listings_page">
 	<div class="header_search_div header_div">
 		<div class="inner_header">
+{{> search_header}}
+{{> search_form_services}}
+		</div>
+	
+	</div>	
+</template>
+
+<template name="search_header">
+
 			<img src="/images/logo-tag.png" alt="Logo" />
 			<nav>
 			<ul>
@@ -48,16 +72,38 @@
 				{{> user_dropdown}}
 			</ul>
 			</nav>
-		
+
+</template>
+<template name="search_form_individuals">
+
 		<div class="left-content search_form">
 			<p>Search for individuals</p>
 			<h2>I am looking for a </h2><input type="text" placeholder="Web Developer"/>
 			<h2>that specialises in </h2><input type="text" placeholder="CSS"/>
 		</div>	
-		</div>
-	
-	</div>	
+
 </template>
+<template name="search_form_businesses">
+
+		<div class="left-content search_form">
+			<p>Search for businesses</p>
+			<h2>I am looking for a </h2><input type="text" placeholder="Web Developer"/>
+			<h2>that specialises in </h2><input type="text" placeholder="CSS"/>
+		</div>	
+	
+</template>
+<template name="search_form_services">
+
+		<div class="left-content search_form">
+			<p>Search for services</p>
+			<h2>I am looking for a </h2><input type="text" placeholder="Web Developer"/>
+			<h2>that specialises in </h2><input type="text" placeholder="CSS"/>
+		</div>	
+
+</template>
+
+
+
 <template name="login_signup">
 <li class="button_container"><a href="#contact_us" class="white-button">Login</a></li>
 <li class="button_container"><a href="#contact_us" class="orange-button">Sign Up</a></li>
