@@ -17,11 +17,22 @@ Router.map(function () {
   this.route('home', {
   path: '/',
   template: 'myHomeTemplate',
-  layoutTemplate: 'layout',
-  yieldTemplates: {
-    'myAsideTemplate': {to: 'header'},
-    'myFooter': {to: 'about_us'}
-    }
+  layoutTemplate: 'layout'
+  });
+});
+
+Router.map(function () {
+  this.route('search', {
+  path: '/search',
+  template: 'myHomeTemplate',
+  layoutTemplate: 'footer'
+  });
+});
+Router.map(function () {
+  this.route('listings', {
+  path: '/listings',
+  template: 'myHomeTemplate',
+  layoutTemplate: 'listings'
   });
 });
 

@@ -16,6 +16,52 @@
 {{> footer}}
 </template>
 
+
+<template name="listings">
+{{> search_header}}
+{{> footer}}
+</template>
+
+<template name="user_dropdown">
+<a href="" class="show_user_name">Crystal</a>
+<span class="triangle"></span>
+<nav class="drop_down">
+<ul>
+<li><a href="" id="edit_profile">Edit profile</a></li>
+<li><a href="" id="view Profile">View profile</a></li>
+<li><a href="" id="logout">Logout</a></li>
+</ul>
+</nav>
+</template>
+
+
+<template name="search_header">
+	<div class="header_search_div header_div">
+		<div class="inner_header">
+			<img src="/images/logo-tag.png" alt="Logo" />
+			<nav>
+			<ul>
+				<li><a href="#about_us">About Us</a></li>
+				<li><a href="#how_it_works">How It Works</a></li>
+				<li><a href="#locations">Locations</a></li>
+				<li><a href="#contact_us">Contact</a></li>
+				{{> user_dropdown}}
+			</ul>
+			</nav>
+		
+		<div class="left-content search_form">
+			<p>Search for individuals</p>
+			<h2>I am looking for a </h2><input type="text" placeholder="Web Developer"/>
+			<h2>that specialises in </h2><input type="text" placeholder="CSS"/>
+		</div>	
+		</div>
+	
+	</div>	
+</template>
+<template name="login_signup">
+<li class="button_container"><a href="#contact_us" class="white-button">Login</a></li>
+<li class="button_container"><a href="#contact_us" class="orange-button">Sign Up</a></li>
+</template>
 <template name="header">
 	<div class="header_div">
 		<div class="inner_header">
@@ -26,8 +72,7 @@
 				<li><a href="#how_it_works">How It Works</a></li>
 				<li><a href="#locations">Locations</a></li>
 				<li><a href="#contact_us">Contact</a></li>
-				<li class="button_container"><a href="#contact_us" class="white-button">Login</a></li>
-				<li class="button_container"><a href="#contact_us" class="orange-button">Sign Up</a></li>
+				{{> login_signup}}
 			</ul>
 			</nav>
 		

@@ -20,9 +20,15 @@ body {
 	margin: 0px;
 }
 
+.header_search_div {
+	background-image: url('/images/bg.png');
+	height:225px;
+}
+
 .inner_header {
 	width: 50%;
 	margin: 0 auto;
+	position: relative;
 }
 
 .inner_header img {
@@ -35,6 +41,7 @@ nav ul {
 	margin: 0px;
 	padding-top: 14px;
 	float:right;
+	position: realtive;
 }
 
 nav ul li {
@@ -331,4 +338,87 @@ footer {
 footer img {
 	margin: 0 auto;
 	margin-top: 20px;
+}
+
+.search_form{
+	width: 100%;
+}
+
+
+.search_form h2, .search_form input {
+	display: inline-block;
+	width: 250px;
+	float: left;
+	color: #fff;
+}
+
+
+.search_form h2 {
+	clear: left;
+	margin: 0px 0px;
+	font-size: 30px;
+}
+
+.search_form  input{
+clear: right;
+background: transparent;
+font-size: 20px;
+margin-top:10px;
+height:30px;
+border:none;
+border-bottom: 2px solid #fff;
+}
+
+.show_user_name {
+	padding: 3px 15px;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+nav.drop_down {
+	position: absolute;
+	margin-top: 0px;
+	border: 1px soild #f0f;
+	right:0px;
+	margin-top: 8px;
+	text-align: center;
+	width: 300px;
+}
+
+nav.drop_down ul {
+	padding: 0px 10px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+nav.drop_down ul li {
+display: block;
+color: #000 !important;
+border-bottom: 1px solid #000;
+text-align: center;
+}
+
+nav.drop_down ul li:last-child {
+	border-bottom: none;
+}
+
+nav.drop_down ul li a{
+	color:#000;
+}
+
+nav.drop_down ul li a:hover{
+	color:#be4d0d;
+}
+
+.triangle {
+	border: 1px solid #000;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	position: absolute;
+	right: 10px;
+	display: block;
+	transform: rotate(45deg);
 }
