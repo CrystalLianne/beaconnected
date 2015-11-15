@@ -1,6 +1,7 @@
 <head>
   <title>beaconnected</title>
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,25 +40,45 @@
 		<div class="inner_header">
 {{> search_header}}
 {{> search_form_individuals}}
+
 </div></div>
+{{> list}}
+{{>footer}}
 </template>
 <template name="business_listings_page">
 <div class="header_search_div header_div">
 		<div class="inner_header">
 {{> search_header}}
 {{> search_form_businesses}}
+
 		</div>
 	
 	</div>	
+	{{> list}}
+{{>footer}}
 </template>
 <template name="services_listings_page">
 	<div class="header_search_div header_div">
 		<div class="inner_header">
 {{> search_header}}
 {{> search_form_services}}
+
 		</div>
 	
 	</div>	
+	{{> list}}
+{{>footer}}
+</template>
+
+<template name="list">
+<div class="content list">
+<div class="num_searched">
+	<h3></h3>
+</div>
+<div class="current_users">
+
+</div>
+</div> 
 </template>
 
 <template name="search_header">
@@ -78,8 +99,8 @@
 
 		<div class="left-content search_form">
 			<p>Search for individuals</p>
-			<h2>I am looking for a </h2><input type="text" placeholder="Web Developer"/>
-			<h2>that specialises in </h2><input type="text" placeholder="CSS"/>
+			<h2>I am looking for a </h2><input type="text" id="proffession" placeholder="Web Developer"/>
+			<h2>that specialises in </h2><input type="text" id="skills" placeholder="CSS"/>
 		</div>	
 
 </template>

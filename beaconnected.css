@@ -422,3 +422,41 @@ nav.drop_down ul li a:hover{
 	display: block;
 	transform: rotate(45deg);
 }
+
+.user {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	margin: 10px;
+	width: 50%;
+	float:left;
+}
+
+.connect-to {
+    width: 100%;
+    padding: 0px 26px;
+}
+
+.current_users {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.skills ul li {
+	bullet-style-type: normal;
+}
+
+.connect {
+	width:60%;
+	float: right;
+}
+
+.connect-to {
+	width: 100px;
+}
+
+.sub-menu .white-button {
+	border: 1px solid #999 !important;
+	color: #000 !important;
+	width: 79px;
+	padding: 0px 12px;
+}
